@@ -36,26 +36,44 @@ nav li a { color: black; font-size: 18px; font-weight: bold;}
 .text h2 { color: white; font-size: 50px; margin-left: 200px;}
 .text p { color: white; margin-left: 200px;}
 
-#house { width: 100%; height: 600px; background: skyblue; display: flex; flex-direction: column; align-items: center; }
-#house .title {margin-bottom: 30px;}
+#house { width: 100%; height: 600px; background: lightblue; display: flex; flex-direction: column; align-items: center; }
+#house .title {margin-bottom: 20px;}
 #house .review {display: flex; align-items: center; justify-content: center; grid-column-gap: 50px;
-    width: 70%; height: 400px; background: salmon;
+    width: 70%; height: 400px;
 }
-.r1 { width: 400px; height: 335px; background: sandybrown; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/1_before.jpg');}
-.r2 { width: 400px; height: 335px; background: sandybrown;}
-.r3 { width: 400px; height: 335px; background: sandybrown;}
-.r4 { width: 400px; height: 335px; background: sandybrown;}
-.more { width: 200px; height: 50px; background: white; display: flex; align-items: center; justify-content: center; border-radius: 20px; margin-top: 30px;  margin-bottom: 30px;}
+.r1, .r2, .r3, .r4 { width: 400px; height: 335px; background: sandybrown;}
+/* .r1 .pic { 
+    width: 100%; height: 250px;
+    position: relative; transition: 4s; transform-style: preserve-3d;
+} */
+.r1 .pic { width: 100%; height: 250px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/1_before.jpg'); background-size: cover;}
+.r2 .pic { width: 100%; height: 250px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/2_before.jpg'); background-size: cover;}
+.r3 .pic { width: 100%; height: 250px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/3_before.jpg'); background-size: cover;}
+.r4 .pic { width: 100%; height: 250px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/4_before.jpg'); background-size: cover;}
+.more { width: 200px; height: 50px; background: white; display: flex; align-items: center; justify-content: center; border-radius: 20px; margin-top: 1px; margin-bottom: 30px;}
 
-#specialist {    width: 100%; height: 660px; background: lightgray; }
+#specialist { width: 100%; height: 660px; background: lightgray; }
 .title { display: flex; align-items: center; justify-content: center; padding-top: 30px; }
-#specialist.review { display: flex; align-items: center; justify-content: center; grid-column-gap: 50px; padding-top: 30px;}
+#specialist .people { display: flex; align-items: center; justify-content: center; grid-column-gap: 50px; padding: 30px 100px 0 100px; }
 .p1, .p2, .p3, .p4 { 
-    width: 400px; height: 450px; background: white; border-radius: 10px;
-    display: flex; align-items: center; justify-content: space-between; box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2);
+    width: 400px; height: 500px;
+    display: flex; align-items: center; justify-content: space-between;
 }
-#specialist .pic img { width: 100%; }
-
+#specialist .pic { width: 100%; height: 500px; position: relative; transition: 1s; transform-style: preserve-3d;  }
+#specialist .pic img { width: 100%; height: 500px; object-fit: cover;  border-radius: 10px;  box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2);}
+#specialist .front, .back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; }
+#specialist .pic:hover { transform: rotateY(180deg);}
+#specialist .back { 
+    transform: rotateY(180deg); background-color: burlywood;  border-radius: 10px;  box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+}
+#specialist .info h2 { font-size: 40px; color: white;}
+#specialist .info p { font-size: 25px; margin-bottom: 30px; color: whitesmoke;}
+#specialist .info a { font-size: 20px; color: aqua;}
+.p1 .back { background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('/선수제공파일/A모듈 선수제공파일/specialist/specialist1.jpg'); background-size: cover;}
+.p2 .back { background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('/선수제공파일/A모듈 선수제공파일/specialist/specialist2.jpg'); background-size: cover;}
+.p3 .back { background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('/선수제공파일/A모듈 선수제공파일/specialist/specialist3.jpg'); background-size: cover;}
+.p4 .back { background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('/선수제공파일/A모듈 선수제공파일/specialist/specialist4.jpg'); background-size: cover;}
 
 #review { width: 100%; height: 500px; background: silver;}
 footer { width: 100%; height: 100px; background: darkgrey; display: flex; align-items: center; justify-content: center;}
