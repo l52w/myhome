@@ -41,7 +41,7 @@ nav li a { color: black; font-size: 18px; font-weight: bold;}
 #house .review {display: flex; align-items: center; justify-content: center; grid-column-gap: 50px;
     width: 70%; height: 400px; background: salmon;
 }
-.r1 { width: 400px; height: 335px; background: sandybrown; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/1_before.jpg');}
+.r1 { width: 400px; height: 335px; background: sandybrown; background-image: url('/A모듈 선수제공파일/housewarming_party/1_before.jpg');}
 .r2 { width: 400px; height: 335px; background: sandybrown;}
 .r3 { width: 400px; height: 335px; background: sandybrown;}
 .r4 { width: 400px; height: 335px; background: sandybrown;}
