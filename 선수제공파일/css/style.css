@@ -44,8 +44,8 @@ nav li a { color: black; font-size: 18px; font-weight: bold;}
     display: flex; flex-direction: column; box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2);
 }
 .r1 .pic img{width: 90%; height: 300px; margin-top: 20px; margin-left: 20px;}
-.r1 .picafter img{width: 90%; height: 250px; margin-top: -230px; margin-left: 15px; opacity: 0;;}
-.r1 .pic img:hover ~ .picafter img{ opacity: 1; position: absolute; transition-duration: 1s; }
+.r1 .picafter img{ position: absolute; width: 90%; height: 250px; top: 200px; margin-left: 55px; opacity: 0;}
+.r1 .pic:hover{ background: red; transition-duration: 1s; }
 .more { width: 200px; height: 50px; background: white; display: flex; align-items: center; justify-content: center; border-radius: 20px; margin-top: 30px; margin-left: 700px;}
 
 #specialist { width: 100%; height: 500px; background: skyblue;}
