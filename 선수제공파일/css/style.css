@@ -22,15 +22,15 @@ nav li a { color: black; font-size: 18px; font-weight: bold;}
 }
 .text { position: absolute; }
 .text:nth-child(1) { 
-    width: 1600px; height: 750px; background-size: cover; background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('/선수제공파일/\(공통\)\ 선수제공파일/사진/couch-1835923_1920.jpg'); 
+    width: 1600px; height: 750px; background-size: cover; background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('/선수제공파일/(공통) 선수제공파일/사진/couch-1835923_1920.jpg'); 
     display: flex; justify-content: center; flex-direction: column;
 }
 .text:nth-child(2) { 
-    width: 1600px; height: 750px; background-size: cover; background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('/선수제공파일/\(공통\)\ 선수제공파일/사진/furniture-731449_1920.jpg');
+    width: 1600px; height: 750px; background-size: cover; background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('/선수제공파일/(공통) 선수제공파일/사진/furniture-731449_1920.jpg');
     display: flex; justify-content: center; flex-direction: column; margin-top: 750px;
 }
 .text:nth-child(3) { 
-    width: 1600px; height: 750px; background-size: cover; background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('/선수제공파일/\(공통\)\ 선수제공파일/사진/interior-3530343_1920.jpg');
+    width: 1600px; height: 750px; background-size: cover; background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('/선수제공파일/(공통) 선수제공파일/사진/interior-3530343_1920.jpg');
     display: flex; justify-content: center; flex-direction: column; margin-top: 1500px;
 }
 .text h2 { color: white; font-size: 50px; margin-left: 200px;}
@@ -41,7 +41,7 @@ nav li a { color: black; font-size: 18px; font-weight: bold;}
 #house .review {display: flex; align-items: center; justify-content: center; grid-column-gap: 50px;
     width: 70%; height: 400px; background: salmon;
 }
-.r1 { width: 400px; height: 335px; background: sandybrown; background-image: url('/A모듈 선수제공파일/housewarming_party/1_before.jpg');}
+.r1 { width: 400px; height: 335px; background: sandybrown; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/1_before.jpg');}
 .r2 { width: 400px; height: 335px; background: sandybrown;}
 .r3 { width: 400px; height: 335px; background: sandybrown;}
 .r4 { width: 400px; height: 335px; background: sandybrown;}
