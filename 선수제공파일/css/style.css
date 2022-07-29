@@ -36,20 +36,21 @@ nav li a { color: black; font-size: 18px; font-weight: bold;}
 .text h2 { color: white; font-size: 50px; margin-left: 200px;}
 .text p { color: white; margin-left: 200px;}
 
-#house { width: 100%; height: 600px; background: lightblue; display: flex; flex-direction: column; align-items: center; }
+#house { width: 100%; height: 600px; background-image: linear-gradient( rgba(164, 164, 192, 0.9), rgba(164, 164, 192, 0.9) ),url('/선수제공파일/(공통) 선수제공파일/사진/conference-room-768441_1920.jpg'); background-size: cover; display: flex; flex-direction: column; align-items: center; }
 #house .title {margin-bottom: 20px;}
-#house .review {display: flex; align-items: center; justify-content: center; grid-column-gap: 50px;
-    width: 70%; height: 400px;
-}
-.r1, .r2, .r3, .r4 { width: 400px; height: 335px; background: sandybrown;}
-/* .r1 .pic { 
-    width: 100%; height: 250px;
-    position: relative; transition: 4s; transform-style: preserve-3d;
-} */
-.r1 .pic { width: 100%; height: 250px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/1_before.jpg'); background-size: cover;}
-.r2 .pic { width: 100%; height: 250px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/2_before.jpg'); background-size: cover;}
-.r3 .pic { width: 100%; height: 250px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/3_before.jpg'); background-size: cover;}
-.r4 .pic { width: 100%; height: 250px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/4_before.jpg'); background-size: cover;}
+#house .review {display: flex; align-items: center; justify-content: center; grid-column-gap: 50px; width: 70%; height: 400px; }
+#house .r1, .r2, .r3, .r4 { width:300px; height: 335px; background: seashell; position: relative; border-radius: 10px; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);}
+#house .pic { display: flex; position: relative;}
+#house .pic img { width: 100%; height: 240px; position: absolute; border-radius: 10px 10px 0 0;}
+#house .r1 .before {width: 242.5px; height: 240px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/1_before.jpg'); background-size: cover; border-radius: 10px 10px 0 0;}
+#house .r2 .before {width: 242.5px; height: 240px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/1_before.jpg'); background-size: cover;border-radius: 10px 10px 0 0;}
+#house .r3 .before {width: 242.5px; height: 240px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/1_before.jpg'); background-size: cover;border-radius: 10px 10px 0 0;}
+#house .r4 .before {width: 242.5px; height: 240px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/1_before.jpg'); background-size: cover;border-radius: 10px 10px 0 0;}
+#house .after { opacity: 0; transition: 1s; }
+#house .before:hover ~ .after{ opacity: 1; margin-left: -242px;}
+#house h3 { margin: 15px 20px 0 20px;}
+#house p { margin: 5px 20px 0 20px;}
+#house .checked { color: orange;}
 .more { width: 200px; height: 50px; background: white; display: flex; align-items: center; justify-content: center; border-radius: 20px; margin-top: 1px; margin-bottom: 30px;}
 
 #specialist { width: 100%; height: 660px; background: lightgray; }
