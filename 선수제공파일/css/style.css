@@ -79,7 +79,7 @@ nav li a { color: black; font-size: 18px; font-weight: bold;}
 #specialist .info h2 { font-size: 40px; color: white;}
 #specialist .info p { font-size: 25px; margin-bottom: 30px; color: whitesmoke;}
 #specialist .info a { font-size: 20px; color: aqua;}
-.p1 .back { background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('./선수제공파일/A모듈 선수제공파일/specialist/specialist1.jpg'); background-size: cover;}
+.p1 .back { background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('/선수제공파일/A모듈 선수제공파일/specialist/specialist1.jpg'); background-size: cover;}
 .p2 .back { background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('/선수제공파일/A모듈 선수제공파일/specialist/specialist2.jpg'); background-size: cover;}
 .p3 .back { background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('/선수제공파일/A모듈 선수제공파일/specialist/specialist3.jpg'); background-size: cover;}
 .p4 .back { background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('/선수제공파일/A모듈 선수제공파일/specialist/specialist4.jpg'); background-size: cover;}
