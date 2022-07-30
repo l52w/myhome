@@ -47,7 +47,7 @@ nav li a { color: black; font-size: 18px; font-weight: bold;}
 #house { width: 100%; height: 570px; background-image: linear-gradient( rgba(164, 164, 192, 0.9), rgba(164, 164, 192, 0.9) ),url('/선수제공파일/(공통) 선수제공파일/사진/conference-room-768441_1920.jpg'); background-size: cover; display: flex; flex-direction: column; align-items: center; }
 #house .title {margin-bottom: 20px;}
 #house .review {display: flex; align-items: center; justify-content: center; grid-column-gap: 50px; width: 70%; height: 400px; }
-#house .r1, .r2, .r3, .r4 { width:300px; height: 335px; background: seashell; position: relative; border-radius: 10px; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);}
+#house .r1, .r2, .r3, .r4 { width:300px; height: 335px; background: white; position: relative; border-radius: 10px; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);}
 #house .pic { display: flex; position: relative;}
 #house .pic img { width: 100%; height: 240px; position: absolute; border-radius: 10px 10px 0 0;}
 #house .r1 .before {width: 242.5px; height: 240px; background-image: url('/선수제공파일/A모듈 선수제공파일/housewarming_party/1_before.jpg'); background-size: cover; border-radius: 10px 10px 0 0;}
@@ -73,7 +73,7 @@ nav li a { color: black; font-size: 18px; font-weight: bold;}
 #specialist .front, .back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; }
 #specialist .pic:hover { transform: rotateY(180deg);}
 #specialist .back { 
-    transform: rotateY(180deg); background-color: burlywood;  border-radius: 10px;  box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2);
+    transform: rotateY(180deg); border-radius: 10px;  box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.2);
     display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
 }
 #specialist .info h2 { font-size: 40px; color: white;}
@@ -90,5 +90,6 @@ nav li a { color: black; font-size: 18px; font-weight: bold;}
 .rv { width: 70%; height: 360px; margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between;}
 .rv1 { width: 530px; height: 300px; background: white; border-radius: 10px;}
 .rv2 { width: 530px; height: 300px; background: white; border-radius: 10px;}
-#review p { font-size: 20px; padding: 30px;}
+#review p { font-size: 20px; padding: 31px; padding-top: 45px;}
+#review .more { padding: 15px 0;}
 footer { width: 100%; height: 100px; background: darkgrey; display: flex; align-items: center; justify-content: center;}
