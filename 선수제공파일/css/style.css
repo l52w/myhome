@@ -17,26 +17,34 @@ display: flex; align-items: center; justify-content: center;}
 nav ul { display: flex;grid-column-gap: 50px;}
 nav li a { color: black; font-size: 18px; font-weight: bold;}
 
-#visual {
-    width: 100%; height: 750px; overflow: hidden; position: relative;
+#visual { width: 100%; height: 750px; overflow: hidden;}
+.text { color: black; margin-left: 200px; position: absolute; top: 400px;}
+.text h2 {font-size: 50px;}
+.text p {font-size: 20px;}
+.slidebox {width:1600px; height: 750px;}
+.slidebox .slidelist {white-space:nowrap; font-size:0; overflow:hidden;}
+.slidebox .slidelist .slideitem {position:relative; display:inline-block; vertical-align:middle; width:100%; transition:all 1s; margin-top: -150px;}
+.slidebox .slidelist .slideitem > a {display:block; width:auto; position:relative;}
+.slidebox .slidelist .slideitem > a img {width:100%;}
+.slidebox .slidelist .slideitem > a label {position:absolute; top:50%; transform:translateY(-50%); padding:20px; border-radius:50%; cursor:pointer;}
+.slidebox .slidelist .slideitem > a label.prev {left:50px;background:#333 url('./img/left-arrow.png') center center / 50% no-repeat;}
+.slidebox .slidelist .slideitem > a label.next {right:50px;background:#333 url('./img/right-arrow.png') center center / 50% no-repeat;}
+/* .slideitem:nth-child(3) {margin-top: 150px;} */
+@keyframes slide01 {
+	0% {left:0%;}	33% {left:0%;}	34% {left:-100%}	66% {left:-100%;}	67% {left:-200%;}	99% {left:-200%;}	100% {left:0%;}
 }
-.text { position: absolute; }
-.text:nth-child(1) { 
-    width: 1600px; height: 750px; background-size: cover; background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('/선수제공파일/(공통) 선수제공파일/사진/couch-1835923_1920.jpg'); 
-    display: flex; justify-content: center; flex-direction: column;
+@keyframes slide02 {
+	0% {left:0%;}	33% {left:0%;}	34% {left:-100%;}	66% {left:-100%;}	67% {left:100%;}	99% {left:100%;}	100% {left:0%;}
 }
-.text:nth-child(2) { 
-    width: 1600px; height: 750px; background-size: cover; background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('/선수제공파일/(공통) 선수제공파일/사진/furniture-731449_1920.jpg');
-    display: flex; justify-content: center; flex-direction: column; margin-top: 750px;
+@keyframes slide03 {
+	0% {left:0%;}	33% {left:0%;}	34% {left:200%;}	66% {left:200%;}	67% {left:100%;}	99% {left:100%;}	100% {left:0%;}
 }
-.text:nth-child(3) { 
-    width: 1600px; height: 750px; background-size: cover; background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('/선수제공파일/(공통) 선수제공파일/사진/interior-3530343_1920.jpg');
-    display: flex; justify-content: center; flex-direction: column; margin-top: 1500px;
-}
-.text h2 { color: white; font-size: 50px; margin-left: 200px;}
-.text p { color: white; margin-left: 200px;}
+[name="slide"] { display: none;}
+#slide01:checked ~ .slidelist .slideitem {transform:translateX(0);animation:slide01 15s infinite;}
+#slide02:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 15s infinite;}
+#slide03:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 15s infinite;}
 
-#house { width: 100%; height: 600px; background-image: linear-gradient( rgba(164, 164, 192, 0.9), rgba(164, 164, 192, 0.9) ),url('/선수제공파일/(공통) 선수제공파일/사진/conference-room-768441_1920.jpg'); background-size: cover; display: flex; flex-direction: column; align-items: center; }
+#house { width: 100%; height: 570px; background-image: linear-gradient( rgba(164, 164, 192, 0.9), rgba(164, 164, 192, 0.9) ),url('/선수제공파일/(공통) 선수제공파일/사진/conference-room-768441_1920.jpg'); background-size: cover; display: flex; flex-direction: column; align-items: center; }
 #house .title {margin-bottom: 20px;}
 #house .review {display: flex; align-items: center; justify-content: center; grid-column-gap: 50px; width: 70%; height: 400px; }
 #house .r1, .r2, .r3, .r4 { width:300px; height: 335px; background: seashell; position: relative; border-radius: 10px; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);}
@@ -50,10 +58,10 @@ nav li a { color: black; font-size: 18px; font-weight: bold;}
 #house .before:hover ~ .after{ opacity: 1; margin-left: -242px;}
 #house h3 { margin: 15px 20px 0 20px;}
 #house p { margin: 5px 20px 0 20px;}
-#house .checked { color: orange;}
+.checked { color: orange;}
 .more { width: 200px; height: 50px; background: white; display: flex; align-items: center; justify-content: center; border-radius: 20px; margin-top: 1px; margin-bottom: 30px;}
 
-#specialist { width: 100%; height: 660px; background: lightgray; }
+#specialist { width: 100%; height: 700px; background: lightgray; }
 .title { display: flex; align-items: center; justify-content: center; padding-top: 30px; }
 #specialist .people { display: flex; align-items: center; justify-content: center; grid-column-gap: 50px; padding: 30px 100px 0 100px; }
 .p1, .p2, .p3, .p4 { 
@@ -75,6 +83,12 @@ nav li a { color: black; font-size: 18px; font-weight: bold;}
 .p2 .back { background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('/선수제공파일/A모듈 선수제공파일/specialist/specialist2.jpg'); background-size: cover;}
 .p3 .back { background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('/선수제공파일/A모듈 선수제공파일/specialist/specialist3.jpg'); background-size: cover;}
 .p4 .back { background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('/선수제공파일/A모듈 선수제공파일/specialist/specialist4.jpg'); background-size: cover;}
+#specialist .more { margin-left: 700px; margin-top: 30px;}
 
-#review { width: 100%; height: 500px; background: silver;}
+#review { width: 100%; height: 500px; background: silver; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+#review .title { margin-bottom: 30px;}
+.rv { width: 70%; height: 360px; margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between;}
+.rv1 { width: 530px; height: 300px; background: white; border-radius: 10px;}
+.rv2 { width: 530px; height: 300px; background: white; border-radius: 10px;}
+#review p { font-size: 20px; padding: 30px;}
 footer { width: 100%; height: 100px; background: darkgrey; display: flex; align-items: center; justify-content: center;}

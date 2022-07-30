@@ -35,20 +35,46 @@
             </nav>
         </header>
         <section id="visual">
-            <article id="slidebox">
-                <div class="text">
-                    <h2>1111111111</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam animi quae totam dolores, doloribus ipsam.<br> Cumque quos ipsum, vero, quam illum numquam fugit, saepe voluptates aperiam aspernatur impedit suscipit est?</p>
-                </div>
-                <div class="text">
-                    <h2>1111111111</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam animi quae totam dolores, doloribus ipsam.<br> Cumque quos ipsum, vero, quam illum numquam fugit, saepe voluptates aperiam aspernatur impedit suscipit est?</p>
-                </div>
-                <div class="text">
-                    <h2>1111111111</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam animi quae totam dolores, doloribus ipsam.<br> Cumque quos ipsum, vero, quam illum numquam fugit, saepe voluptates aperiam aspernatur impedit suscipit est?</p>
-                </div>
-            </article>
+            <div class="slidebox">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <ul class="slidelist">
+                    <li class="slideitem">
+                        <a>
+                            <label for="slide03" class="prev"></label>
+                            <img src="./(공통) 선수제공파일/사진/couch-1835923_1920.jpg">
+                            <div class="text">
+                                <h2>1111111111</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam animi quae totam dolores, doloribus ipsam.<br> Cumque quos ipsum, vero, quam illum numquam fugit, saepe voluptates aperiam aspernatur impedit suscipit est?</p>
+                            </div>
+                            <label for="slide02" class="next"></label>
+                        </a>
+                    </li>
+                    <li class="slideitem">
+                        <a>
+                            <label for="slide01" class="prev"></label>
+                            <img src="./(공통) 선수제공파일/사진/furniture-731449_1920.jpg">
+                            <div class="text">
+                                <h2>2222222222</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam animi quae totam dolores, doloribus ipsam.<br> Cumque quos ipsum, vero, quam illum numquam fugit, saepe voluptates aperiam aspernatur impedit suscipit est?</p>
+                            </div>
+                            <label for="slide03" class="next"></label>
+                        </a>
+                    </li>
+                    <li class="slideitem">
+                        <a>
+                            <label for="slide02" class="prev"></label>
+                            <img src="./(공통) 선수제공파일/사진/interior-3530343_1920.jpg">
+                            <div class="text">
+                                <h2>33333333333</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam animi quae totam dolores, doloribus ipsam.<br> Cumque quos ipsum, vero, quam illum numquam fugit, saepe voluptates aperiam aspernatur impedit suscipit est?</p>
+                            </div>
+                            <label for="slide01" class="next"></label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section id="house">
             <div class="title">
@@ -162,9 +188,38 @@
                     </div>
                 </div>
             </div>
+            <div class="more">
+                <a href="#"><h4>더보기</h4></a>
+            </div>
         </section>
         <section id="review">
-
+            <div class="title">
+                <h1>전문가 시공 후기</h1>
+            </div>
+            <div class="rv">
+                <div class="rv1">
+                    <p>
+                        전문가 이름 : 전문가2<br>
+                        전문가 아이디 : specialist2<br>
+                        작성자 이름 : 박재현<br>
+                        작성자 아이디 : park<br>
+                        비용 : 3,200,000<br>
+                        내용 : 원하던 아이언맨 컨셉으로 너무 잘 꾸며주셨습니다!<br>
+                        평점 : <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><br>
+                    </p>
+                </div>
+                <div class="rv2">
+                    <p>
+                        전문가 이름 : 전문가4<br>
+                        전문가 아이디 : specialist4<br>
+                        작성자 이름 : 김정수<br>
+                        작성자 아이디 : kim<br>
+                        비용 : 5,500,000<br>
+                        내용 : 요구사항대로 부드러운 느낌을 잘 살려주셨습니다.<br>
+                        평점 : <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star"></i><br>
+                    </p>
+                </div>
+            </div>
         </section>
         <footer>
             <p>Copyright (C) 2020 by MyHome Inc All Rights Reserved.</p>
